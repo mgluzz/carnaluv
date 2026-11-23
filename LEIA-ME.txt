@@ -1,0 +1,16 @@
+CarnaLuv 2027 — hotsite (protótipo)
+
+Para usar a sua folha de sprites:
+1. Substitua sprites.png por um arquivo com o mesmo nome (576 x 384 px, células de 96 x 96).
+2. Dê dois cliques no index.html. Funciona direto do disco.
+
+Como o jogo mede os quadros:
+- Aberto do disco (file://), o navegador não deixa o jogo ler os pixels da imagem.
+  Nesse caso ele usa medidas fixas, tiradas da folha de sprites de 23/11/2026.
+  Se você mudar bastante o tamanho de algum quadro (principalmente o abaixado,
+  o cogumelo, a garrafa ou o dragão de frente), as áreas de colisão não acompanham.
+- Num servidor (hospedagem do site ou "python3 -m http.server 8000" nesta pasta),
+  o jogo mede cada quadro sozinho, a partir da própria imagem.
+
+O sprites-guia.png é só referência visual da grade; o jogo não o lê.
+A fonte Neue Power Ultra está embutida no index.html (confira a licença web).
